@@ -75,7 +75,7 @@ export default function extractProps(
     transform,
     testID,
     accessibilityLabel,
-    accessible
+    accessible,
   } = props;
   const extracted: extractedProps = {};
 
@@ -120,15 +120,15 @@ export default function extractProps(
     extracted.name = String(id);
   }
 
-  if(testID) {
+  if (testID) {
     extracted.testID = String(testID);
   }
 
-  if(accessibilityLabel) {
+  if (accessibilityLabel) {
     extracted.accessibilityLabel = String(accessibilityLabel);
   }
 
-  if(accessible) {
+  if (accessible) {
     extracted.accessible = Boolean(accessible);
   }
 
